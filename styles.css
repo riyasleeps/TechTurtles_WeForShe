@@ -1,0 +1,220 @@
+/* General body styling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+}
+
+.myntra-logo, .fwd-logo {
+    height: 40px; /* Adjust height as needed */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: normal; /* Remove bold weight */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    color: #333; /* Darker text color on hover */
+}
+
+/* Search bar styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #ff4081; /* Myntra brand color */
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #e73370; /* Darker shade of Myntra brand color */
+}
+
+/* Header icons styling */
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons .icon img {
+    height: 24px; /* Adjust size as needed */
+}
+
+.header-icons a {
+    text-decoration: none;
+}
+
+/* Banner styling */
+.banner {
+    width: 100%;
+    height: 500px;
+    background-image: url('banner.png');
+    background-size: cover; /* Adjust to fit the image as needed */
+    background-position: center; /* Center the image */
+    color: whitesmoke; /* Default text color for .banner content */
+}
+  
+  
+
+.banner2 {
+    background-color: #8cc5d5; /* Light blue background */
+    color: white;
+    text-align: center;
+    padding: 80px 20px; /* Adjust padding for banner */
+    margin-top: 20px; /* Space from the header */
+    position: relative;
+    box-sizing: border-box; /* Include padding in height */
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner h2 {
+    font-size: 45px;
+    margin: 0;
+    font-weight: bolder; /* Remove bold weight */
+}
+
+.banner p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff4081; /* Myntra brand color */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: normal; /* Remove bold weight */
+}
+
+.shop-now-button:hover {
+    background-color: #e73370; /* Darker shade of Myntra brand color */
+}
+
+/* Main content area */
+main {
+    padding-top: 70px; /* Space for the fixed header */
+}
+
+/* Vintage items container styling */
+#vintage-inspired-collection {
+    text-align: center; /* Center text */
+    margin: 40px 0; /* Spacing above and below the section */
+}
+
+#vintage-inspired-collection h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #1f1023; /* Vintage-inspired color */
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+    padding: 20px;
+    background-color: #fff; /* White background for item container */
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 220px; /* Adjust width as needed */
+    height: 300px; /* Fixed height for all items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #f8f8f8; /* Light gray background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Include padding and border in the item's dimensions */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images inside items */
+.item img {
+    width: 100%; /* Full width for all images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.item p {
+    margin: 0;
+    font-size: 14px;
+    color: #666; /* Darker text color */
+}
+
+.price {
+    font-size: 16px;
+    color: #333; /* Darker text color for prices */
+    margin-top: 5px;
+}
